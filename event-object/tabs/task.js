@@ -13,17 +13,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (!selectedTabContent || selectedTabContent === activeTabContent) return;
 
-        // Скрыть активное содержимое вкладки
         activeTabContent.classList.remove('tab__content_active');
 
-        // Сделать выбранное содержимое вкладки активным
         selectedTabContent.classList.add('tab__content_active');
 
-        // Убрать активный класс у текущей вкладки
         const activeTab = tabNavigation.querySelector('.tab.tab_active');
         activeTab.classList.remove('tab_active');
 
-        // Добавить активный класс к выбранной вкладке
         selectedTab.classList.add('tab_active');
     });
 });
