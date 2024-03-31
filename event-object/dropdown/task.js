@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Закрытие списка при клике вне его области
+    // закрытие списка при клике вне его области
     document.addEventListener('click', function (e) {
         dropdowns.forEach(dropdown => {
             if (!dropdown.contains(e.target)) {
