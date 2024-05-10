@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     function isElementInViewport(el) {
-        var rect = el.getBoundingClientRect();
+        let rect = el.getBoundingClientRect();
         return (
             rect.top >= 0 &&
             rect.left >= 0 &&
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function scroll() {
-        var revealElements = document.querySelectorAll('.reveal');
+        let revealElements = document.querySelectorAll('.reveal');
         revealElements.forEach(function (element) {
             if (isElementInViewport(element)) {
                 element.classList.add('reveal_active');
